@@ -11,10 +11,25 @@ new PointLight(rayHandler, 50, Color.WHITE, 6, 1, 1);
 //Respeta el area del objecto (en este ejemplo se utiliza para respetar el cuerpo del player)
 pointLight.setSoftnessLength(0f);
 
+![](android/assets/Softness_off.png)
+
+Imagen sin SoftnessLength
+
+![](android/assets/Softness_on.png)
+
+Imagen con SoftnessLength
+
 //Si es verdadero permite al sistema de luz pasar los objectos
 pointLight.setXray(false);        
 
+![](android/assets/Xray_false.png)
+
+Imagen sin Xray
+
+![](android/assets/Xray_true.png)
+
+Imagen con Xray
+
 //Realiza un seguimiento al objecto en cuestion (en este ejemplo es un cuadrado el cual lo sigue a donde se mueva)
 pointLight.attachToBody(player);
-
 
