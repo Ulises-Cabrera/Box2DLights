@@ -38,8 +38,8 @@ class Lights {
         createPlayer();
         createBoxes();
         createAmbientLighting();
-        //createPointLight();
-        createConeLight();
+        createPointLight();
+        //createConeLight();
     }
 
     private void createPlayer() {
@@ -97,6 +97,7 @@ class Lights {
     private void createPointLight() {
         PointLight pointLight = new PointLight(rayHandler, 50, Color.WHITE, 6, 1, 1);
         pointLight.setSoftnessLength(0f);
+        pointLight.attachToBody(player);
         pointLight.setXray(false);
     }
 
