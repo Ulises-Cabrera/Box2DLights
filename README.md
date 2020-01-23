@@ -16,3 +16,5 @@ pointLight.setXray(false);
 
 //Realiza un seguimiento al objecto en cuestion (en este ejemplo es un cuadrado el cual lo sigue a donde se mueva)
 pointLight.attachToBody(player);
+
+
